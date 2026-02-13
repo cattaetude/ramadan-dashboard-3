@@ -13,7 +13,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
       :root {
@@ -26,6 +26,9 @@
         color: #f3f4f6;
         margin: 0;
         overflow-x: hidden;
+      }
+      .arabic-font {
+        font-family: 'Amiri', serif;
       }
       .glass-card {
         background: rgba(255, 255, 255, 0.05);
@@ -458,9 +461,14 @@
             <div className="relative z-10 text-center">
                 <h3 className="text-xl font-bold text-yellow-500 mb-8 uppercase tracking-widest">ইফতারের পর দোয়া</h3>
                 <div className="space-y-6">
-                  <p dir="rtl" className="text-3xl md:text-5xl font-serif text-white leading-relaxed">ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوْقُ وَثَبَتَ الْأَجْرُ إِنْ শَاءَ اللهُ</p>
+                  <div dir="rtl" className="arabic-font text-4xl md:text-6xl text-white leading-[1.6] mb-4 text-center">
+                    ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوْقُ وَثَبَتَ الْأَجْرُ إِنْ شَاءَ اللهُ
+                  </div>
                   <div className="h-[2px] w-16 bg-yellow-500 mx-auto"></div>
-                  <p className="text-lg md:text-xl text-gray-300 leading-relaxed italic">“পিপাসা দূর হলো, শিরা-উপশিরা সিক্ত হলো এবং ইনশাআল্লাহ সওয়াবও সাব্যস্ত হলো।”</p>
+                  <p className="text-lg md:text-xl text-gray-300 leading-relaxed italic">
+                    “পিপাসা দূর হলো, শিরা-উপশিরা সিক্ত হলো এবং ইনশাআল্লাহ সওয়াবও সাব্যস্ত হলো।”
+                  </p>
+                  <p className="text-xs text-gray-500">— আবু দাউদ, হাদিস নং ২৩৫৭</p>
                 </div>
             </div>
           </div>
